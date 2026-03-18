@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Set viewport to device width -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load style sheets for the site. Custom one and font awesome icons -->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Define the navigation bar -->
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="carousel.html" class="active">Carousel</a>
+  <a href="article.html">Article</a>
+  <a href="media.html">Media</a>
+  <a href="socials.html">Socials</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- Function to make the nav bar responsive. Toggles the menu when clicking the icon on a smaller screen -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<!-- Main site content -->
+<body>
+
+<div id="carouselPage" id="carouselPage">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="RandomPic1.png" alt="Pic 1">
+        <div class="carousel-caption">
+          <h3>FFXIV Pride Scene</h3>
+          <p>This one was fun to make</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="RandomPic2.png" alt="Pic 2">
+          <div class="carousel-caption">
+              <h3>Adran</h3>
+              <p>Look at them go</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="RandomPic3.png" alt="Pic 3">
+          <div class="carousel-caption">
+              <h3>Nophica</h3>
+              <p>She's cool</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci est, porttitor a magna vel, bibendum dictum mi. Mauris sit amet consequat massa. Nam lacinia finibus leo ultrices imperdiet. In venenatis eros lectus, eu iaculis metus aliquet ut. Maecenas dapibus faucibus sem, ac ultrices massa vulputate vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ac porta dolor. Phasellus in interdum augue. Praesent vitae pretium arcu. Integer odio tellus, euismod nec nibh in, accumsan tincidunt nisi. Sed sit amet lobortis enim.</p>
+<p>Ut eu tellus vehicula, placerat turpis a, dictum tellus. Etiam mollis odio libero, non egestas eros venenatis non. Curabitur consectetur hendrerit tempus. Sed lobortis vulputate nunc, non feugiat metus laoreet nec. Cras fermentum urna at lacinia ultrices. Pellentesque id nulla at odio dapibus elementum. Praesent ante eros, maximus eu rutrum a, rhoncus sit amet nunc. Integer id efficitur dolor, vitae sodales augue. Morbi ex lorem, euismod a auctor vitae, dapibus vel velit.</p>
+
+<p>Proin at vulputate diam. Nunc condimentum pulvinar lorem, nec aliquet leo feugiat at. Integer varius, sapien nec sodales dapibus, nunc justo finibus metus, et sodales erat lectus ut ipsum. Vestibulum laoreet, ligula vel tempus consectetur, urna arcu laoreet est, in congue ipsum ipsum eget tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque tincidunt mattis sagittis. Mauris ex erat, sagittis vitae lectus eget, porta fringilla nisl. Mauris tempus, ex at consequat sollicitudin, purus ante hendrerit nunc, ut molestie odio sapien id augue. Pellentesque consectetur sollicitudin euismod. Praesent nisi urna, cursus in purus in, efficitur auctor massa. Etiam luctus nibh at magna ultricies, sit amet semper erat pretium. Ut ac tellus ut neque ultricies varius. Pellentesque dui est, iaculis non ante posuere, gravida laoreet orci. Mauris commodo velit erat, a dictum arcu ullamcorper ullamcorper. Ut vel malesuada lorem.</p>
+<p>Fusce efficitur turpis at faucibus semper. Integer sed vulputate sapien, nec tempus mi. Vivamus sagittis vel ligula in dignissim. Aliquam at blandit ipsum, sed laoreet nunc. Nullam vel orci nec nibh placerat lacinia. Maecenas fringilla accumsan fringilla. Proin malesuada nunc lectus, eu hendrerit nisi mollis suscipit. Phasellus sit amet euismod sapien. Fusce aliquet posuere quam, at rhoncus ligula pellentesque nec. Ut commodo sem tincidunt placerat pharetra. Cras id diam aliquet, dapibus purus vestibulum, ullamcorper justo. Donec nec sapien nulla.</p>
+
+
+</body>
+
+<footer>
+  <div class="footer-text">
+    <p>Author: Elizabeth McCaughey</p>
+    <p><a href="mailto:edknit47@gmail.com">edknit47@gmail.com</a></p>
+  </div>
+</footer>
+
+</div>
+</html>

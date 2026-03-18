@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Set viewport to device width -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load style sheets for the site. Custom one and font awesome icons -->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Header section here-->
+
+<!--Banner image (to be changed most likely)-->
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Emma Burrow</h1>
+  </div>
+</div>
+
+<!--Navigation bar-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="filmography.html" class="active">Filmography</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!--Header section here-->
+
+
+
+<!--Main body section here-->
+<iframe width="420" height="315" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”>
+</iframe>
+
+
+
+
+
+
+
+</body>
+<!--Main body section here-->
+
+<!--Footer Section here-->
+
+<footer>
+  <br>
+  <div class="footer-text">
+    <a href="https://twitter.com/iloveffix" class="fa fa-twitter fa-2x"></a>
+    <a href="https://www.youtube.com/@emmmaix" class="fa fa-youtube fa-2x"></a>
+    <a href="https://www.instagram.com/iloveffix" class="fa fa-instagram fa-2x"></a>
+    <a href="https://www.linkedin.com/iloveffix" class="fa fa-linkedin fa-2x"></a>
+  </div>
+  <br>
+</footer>
+
+<!--Footer Section here-->
+
+<!--Script section here-->
+<script>
+
+//Function to make topnav responsive on smaller screens
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+//Functions for media controls
+var myVid = document.getElementById("video1");
+
+//Play and pause video when the button is clicked
+function playPause() {
+  if(myVid.paused)
+    myVid.play();
+  else
+    myVid.pause();
+}
+
+//Toggle the icon of the play/pause button when clicked
+document.getElementById("vidNav").addEventListener("click", function (picChange) {
+    var target = picChange.target;
+    target.classList.toggle("fa-pause");
+}, false);
+</script>
+<!--Script section here-->
+
+
+
+
+
+
+</html>
