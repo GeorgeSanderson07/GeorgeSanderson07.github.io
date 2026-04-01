@@ -1,0 +1,25 @@
+.fa-play {
+  background-color: var(--primary-button-color); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 20px 30px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+.showreelVid {
+    width: 100vw;
+    height: auto;
+}
+}
+
+@media only screen and (min-width: 992px) {
+    .showreelVid {
+    width: 50vw;
+    height: auto;
+}
+}

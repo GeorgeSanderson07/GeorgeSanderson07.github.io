@@ -4,17 +4,20 @@
 <!-- Set viewport to device width -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Load style sheets for the site. Custom one and font awesome icons -->
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="Style/universalStyle.css">
+<link rel="stylesheet" type="text/css" href="Style/filmographyStyle.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--Header section here-->
 
 <!--Banner image (to be changed most likely)-->
+
 </head>
 <body>
-<div class="hero-image">
+<div class="hero-image" id="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">Emma Burrow</h1>
+    <h1 style="font-size:50px"></h1>
   </div>
 </div>
 
@@ -28,51 +31,83 @@
     <i class="fa fa-bars"></i>
   </a>
 </div>
-<!--Header section here-->
+  <!--Header section here-->
 
 
 
-<!--Main body section here-->
-
-<h1>Filmography</h1>
+  <!--Main body section here-->
+<div class="blurContainer" id="blurContainer">
+  <p>Short paragraph with/without heading, something along the lines of "this is a selection of work I've been involved in, click for more info"</p>
   <br>
   <br>
 
-<div class="filmographyLayout" id="filmographyLayout">
-
-  <iframe class="vidEmbed" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”></iframe>
-  <iframe class="vidEmbed" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”></iframe>
-  <iframe class="vidEmbed" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”></iframe>
-  <iframe class="vidEmbed" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”></iframe>
-  <iframe class="vidEmbed" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”></iframe>
-  <iframe class="vidEmbed" src="https://www.youtube.com/embed/mY--DyHJqcI" refererpolicy=“cross-origin-with-strict-origin”></iframe>
-
-</div>
-  <br>
-  <br>
+  <div class="filmographyLayout" id="filmographyLayout">
+    <input type="image" src="Media/placeholderThumbnail.png" class="filmThumb" onclick="openPopup(1)">
 
 
 
+    <input type="image" src="Media/placeholderThumbnail.png" class="filmThumb" onclick="openPopup(2)">
 
 
-</body>
-<!--Main body section here-->
+    <input type="image" src="Media/placeholderThumbnail.png" class="filmThumb" onclick="openPopup(3)">
 
-<!--Footer Section here-->
-
-<footer>
-  <br>
-  <div class="footer-text">
-    <a href="https://twitter.com/iloveffix" class="fa fa-twitter fa-2x"></a>
-    <a href="https://www.youtube.com/@emmmaix" class="fa fa-youtube fa-2x"></a>
-    <a href="https://www.instagram.com/iloveffix" class="fa fa-instagram fa-2x"></a>
-    <a href="https://www.linkedin.com/iloveffix" class="fa fa-linkedin fa-2x"></a>
+    <img src="Media/placeholderThumbnail.png" class="filmThumb">
+    <img src="Media/placeholderThumbnail.png" class="filmThumb">
+    <img src="Media/placeholderThumbnail.png" class="filmThumb">
   </div>
   <br>
-</footer>
+  <br>
 
+
+
+
+
+  </body>
+  <!--Main body section here-->
+
+  <!--Footer Section here-->
+
+  <footer id="footer">
+    <br>
+    <div class="footer-text">
+      <a href="https://twitter.com/iloveffix" class="fa fa-twitter fa-2x"></a>
+      <a href="https://www.youtube.com/@emmmaix" class="fa fa-youtube fa-2x"></a>
+      <a href="https://www.instagram.com/iloveffix" class="fa fa-instagram fa-2x"></a>
+      <a href="https://www.linkedin.com/iloveffix" class="fa fa-linkedin fa-2x"></a>
+    </div>
+    <br>
+  </footer>
+</div>
 <!--Footer Section here-->
+<div class="popup" id="popup1">
+  <button type="button" onclick="closePopup(1)" class="fa fa-window-close fa-2x"></button>
+  <h1>Film Name 1</h1>
+  <div class="popupLayout">
+    <div class="popupItem">
+      <p>Description</p>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class="popupItem"></iframe>
+  </div>
+</div>
 
+<div class="popup" id="popup2">
+  <button type="button" onclick="closePopup(2)" class="fa fa-window-close fa-2x"></button>
+  <h1>Film Name 2</h1>
+  <div class="popupLayout">
+    <div class="popupItem">
+      <p>Description</p>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class="popupItem"></iframe>
+  </div>
+</div>
+
+<div class="popup" id="popup3">
+  <button type="button" onclick="closePopup(3)" class="fa fa-window-close fa-2x"></button>
+  <h1>Film Name 3</h1>
+  <div class="popupLayout">
+    <div class="popupItem">
+      <p>Description</p>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class="popupItem"></iframe>
+  </div>
+</div>
 <!--Script section here-->
 <script>
 
@@ -84,6 +119,30 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+
+
+let blurContainer = document.getElementById("blurContainer");
+let header = document.getElementById("myTopnav");
+let banner = document.getElementByID("hero-image");
+let footer = document.getElementByID("footer");
+
+function openPopup(popupID){
+  let idStr = String(popupID);
+  let targetPopup = "popup"+idStr;
+  let popup = document.getElementById(targetPopup);
+  popup.classList.add("open-popup");
+  blurContainer.classList.add("blurred");
+  header.classList.add("blurred");
+  footer.classList.add("blurred");
+}
+function closePopup(popupID){
+  let idStr = String(popupID);
+  let targetPopup = "popup"+idStr;
+  let popup = document.getElementById(targetPopup);
+  popup.classList.remove("open-popup");
+  blurContainer.classList.remove("blurred");
+  header.classList.remove("blurred");
 }
 
 

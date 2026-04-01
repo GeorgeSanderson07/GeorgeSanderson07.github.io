@@ -1,0 +1,57 @@
+:root {
+  --primary-bg-color: #e0e2db;
+  --primary-nav-color: #424651;
+  --hover-nav-color: #e0e2db;
+  --active-nav-color: #889696;
+  --primary-button-color: #424651;
+  --primary-button-hover-color: #889696;
+}
+.contactPage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--primary-bg-color);
+}
+/*
+.contactItem {
+  width: 48%;
+  float: left;
+  margin: 10px;
+}*/
+
+/* Media Queries for the image//text layout seen on the contact page */
+@media (min-width: 600px) {
+  .contactItem {
+    width:100%;
+    height:auto;
+    float:left;
+  }
+
+  .contactPage {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 992px) {
+  .contactItem {
+  width: 50%;
+  float: left;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+  
+  .contactPage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+
+  }
+
+
+}
+
+

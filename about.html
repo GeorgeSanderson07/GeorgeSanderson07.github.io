@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Set viewport to device width -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load style sheets for the site. Custom one and font awesome icons -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="Style/universalStyle.css">
+<link rel="stylesheet" type="text/css" href="Style/aboutStyle.css"> 
+<!--Header section here-->
+
+<!--Banner image (to be changed most likely)-->
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px"></h1>
+  </div>
+</div>
+
+<!--Navigation bar-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="filmography.html">Filmography</a>
+  <a href="about.html" class="active">About</a>
+  <a href="contact.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!--Header section here-->
+
+<div id="aboutWrapper" class="aboutWrapper">
+
+  <!--Main body section here-->
+  <div id="aboutPage" class="aboutPage">
+
+    <div id="aboutItem" class="aboutItem">
+      <p>Page to contain a paragraph of personal information, education history, experience level etc.</p>
+      <p>Carousel on the right scrolling through images of work being done, with optional titles/descriptions as desired</p>
+    </div>
+    <div id="aboutItem" class="aboutItem">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="Media/placeholder.png" alt="Pic 1">
+            <div class="carousel-caption">
+              <h3>Optional title</h3>
+              <p>Optional description</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="Media/placeholder.png" alt="Pic 2">
+              <div class="carousel-caption">
+                <h3>Optional title</h3>
+                <p>Optional description</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="Media/placeholder.png" alt="Pic 3">
+              <div class="carousel-caption">
+                <h3>Optional title</h3>
+                <p>Optional description</p>
+              </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+  </div>
+  <!--Main body section here-->
+
+  <!--Footer Section here-->
+
+  <footer id="myFooter">
+    <br>
+    <div class="footer-text">
+      <a href="https://twitter.com/iloveffix" class="fa fa-twitter fa-2x" id="myTwitter"></a>
+      <a href="https://www.youtube.com/@emmmaix" class="fa fa-youtube fa-2x" id="myYoutube"></a>
+      <a href="https://www.instagram.com/iloveffix" class="fa fa-instagram fa-2x" id="myInsta"></a>
+      <a href="https://www.linkedin.com/iloveffix" class="fa fa-linkedin fa-2x" id=""myLinkedin></a>
+    </div>
+    <br>
+  </footer>
+</div>
+<!--Footer Section here-->
+
+<!--Script section here-->
+<script>
+
+//Function to make topnav responsive on smaller screens
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+//Functions for media controls
+var myVid = document.getElementById("video1");
+
+//Play and pause video when the button is clicked
+function playPause() {
+  if(myVid.paused)
+    myVid.play();
+  else
+    myVid.pause();
+}
+
+//Toggle the icon of the play/pause button when clicked
+document.getElementById("vidNav").addEventListener("click", function (picChange) {
+    var target = picChange.target;
+    target.classList.toggle("fa-pause");
+}, false);
+</script>
+<!--Script section here-->
+
+
+
+
+
+
+</html>

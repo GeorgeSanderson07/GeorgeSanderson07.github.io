@@ -1,0 +1,216 @@
+:root {
+  --primary-bg-color: #e0e2db;
+  --primary-nav-color: #424651;
+  --hover-nav-color: #e0e2db;
+  --active-nav-color: #889696;
+  --primary-button-color: #424651;
+  --primary-button-hover-color: #889696;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-bg-color) !important; 
+}
+
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--primary-nav-color);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  
+}
+
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--hover-nav-color);
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.topnav a:hover {
+  background-color: var(--hover-nav-color);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: var(--active-nav-color);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/PlaceholderBanner.png");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: flex;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+footer {
+  background-color: var(--primary-nav-color);
+  text-align: left;
+  padding: 20px; 
+  clear: both;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  margin-top: auto;
+}
+
+.footer-text {
+  color: white;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 50px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa-twitter:hover {
+  background: #8ec5f0;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 50px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa-youtube:hover {
+  background: #eb7d7d;
+}
+
+.fa-instagram {
+  background: #ff6600;
+  color: white;
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 50px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa-instagram:hover {
+  background: #f5b88f;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 50px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa-linkedin:hover {
+  background: #7ec1e0;
+}
+
+.fa-play:hover{
+  background-color: var(--primary-button-hover-color);
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
