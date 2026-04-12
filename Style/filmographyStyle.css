@@ -1,10 +1,10 @@
 :root {
-  --primary-bg-color: #e0e2db;
-  --primary-nav-color: #424651;
-  --hover-nav-color: #e0e2db;
-  --active-nav-color: #889696;
-  --primary-button-color: #424651;
-  --primary-button-hover-color: #889696;
+  --primary-bg-color: #FFEDFA;
+  --primary-nav-color: #BE5985;
+  --hover-nav-color: #FFB8E0;
+  --active-nav-color: #EC7FA9;
+  --primary-button-color: #BE5985;
+  --primary-button-hover-color: #FFB8E0;
 }
 
 .blurred {

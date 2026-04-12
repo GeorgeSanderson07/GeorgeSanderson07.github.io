@@ -1,11 +1,23 @@
+
+/*
 :root {
-  --primary-bg-color: #e0e2db;
+  --primary-bg-color: hsl(77, 11%, 87%);
   --primary-nav-color: #424651;
   --hover-nav-color: #e0e2db;
   --active-nav-color: #889696;
   --primary-button-color: #424651;
   --primary-button-hover-color: #889696;
+}*/
+
+:root {
+  --primary-bg-color: #FFEDFA;
+  --primary-nav-color: #BE5985;
+  --hover-nav-color: #FFB8E0;
+  --active-nav-color: #EC7FA9;
+  --primary-button-color: #BE5985;
+  --primary-button-hover-color: #FFB8E0;
 }
+
 
 body, html {
   height: 100%;
@@ -26,7 +38,6 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
-  text-align: center;
   padding: 10px;
 }
 
@@ -68,12 +79,13 @@ p {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/PlaceholderBanner.png");
-  height: 20%;
+  background-image: url("../Media/PinkBanner.png");
+  height: 30%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 500px;
   margin: 0;
   padding: 0;
   top: 0;

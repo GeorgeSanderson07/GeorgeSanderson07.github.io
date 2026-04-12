@@ -1,11 +1,12 @@
 :root {
-  --primary-bg-color: #e0e2db;
-  --primary-nav-color: #424651;
-  --hover-nav-color: #e0e2db;
-  --active-nav-color: #889696;
-  --primary-button-color: #424651;
-  --primary-button-hover-color: #889696;
+  --primary-bg-color: #FFEDFA;
+  --primary-nav-color: #BE5985;
+  --hover-nav-color: #FFB8E0;
+  --active-nav-color: #EC7FA9;
+  --primary-button-color: #BE5985;
+  --primary-button-hover-color: #FFB8E0;
 }
+
 .contactPage {
   display: flex;
   flex-wrap: wrap;
@@ -20,12 +21,21 @@
   margin: 10px;
 }*/
 
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 35px;
+  vertical-align: super;
+}
+
 /* Media Queries for the image//text layout seen on the contact page */
 @media (min-width: 600px) {
   .contactItem {
     width:100%;
-    height:auto;
     float:left;
+  }
+  .contactPic {
+    width: 10px;
   }
 
   .contactPage {
@@ -35,13 +45,22 @@
 
 @media (min-width: 992px) {
   .contactItem {
-  width: 50%;
+  width: 77%;
   float: left;
   align-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   }
-  
+
+  .contactPic {
+    height: 30vw;
+    width: auto;
+    float: right;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .contactPage {
     display: flex;
     flex-wrap: wrap;
@@ -53,5 +72,7 @@
 
 
 }
+
+
 
 

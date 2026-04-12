@@ -8,18 +8,21 @@
   border-radius: 10px;
 }
 
-
+.homeParagraph {
+    text-align: left;
+    margin-left: 30px;
+}
 
 @media only screen and (max-width: 600px) {
 .showreelVid {
     width: 100vw;
-    height: auto;
+    height: 56vw;
 }
 }
 
 @media only screen and (min-width: 992px) {
     .showreelVid {
     width: 50vw;
-    height: auto;
+    height: 28vw;
 }
 }
