@@ -44,7 +44,7 @@
     <br><br><br><br><br><br><br><br>
   </div>
 
-  <img src="Media/ContactEmma2.jpg" alt="Portrait of Emma Burrow" class="contactPic">
+  <img src="" alt="Portrait of Emma Burrow" class="contactPic" id="contactPic">
 
 </div>
 
@@ -79,22 +79,15 @@ function myFunction() {
 }
 
 
-//Functions for media controls
-var myVid = document.getElementById("video1");
+//Function for randomly decided Emma
+const images = ["Media/ContactEmma.jpg", "Media/ContactEmma2.jpg"];
 
-//Play and pause video when the button is clicked
-function playPause() {
-  if(myVid.paused)
-    myVid.play();
-  else
-    myVid.pause();
-}
+document.addEventListener('DOMContentLoaded', _ => {
+  const randImageIndex = ~~(Math.random() * images.length);
+  document.getElementById('contactPic').src = images[randImageIndex];
+});
 
-//Toggle the icon of the play/pause button when clicked
-document.getElementById("vidNav").addEventListener("click", function (picChange) {
-    var target = picChange.target;
-    target.classList.toggle("fa-pause");
-}, false);
+
 </script>
 <!--Script section here-->
 

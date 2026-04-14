@@ -62,5 +62,36 @@
 </footer>
 
 <!--Footer Section here-->
+<!--Script section here-->
+<script>
 
+//Function to make topnav responsive on smaller screens
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+//Functions for media controls
+var myVid = document.getElementById("video1");
+
+//Play and pause video when the button is clicked
+function playPause() {
+  if(myVid.paused)
+    myVid.play();
+  else
+    myVid.pause();
+}
+
+//Toggle the icon of the play/pause button when clicked
+document.getElementById("vidNav").addEventListener("click", function (picChange) {
+    var target = picChange.target;
+    target.classList.toggle("fa-pause");
+}, false);
+</script>
+<!--Script section here-->
 </html>
